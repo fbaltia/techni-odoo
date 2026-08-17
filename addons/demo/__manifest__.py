@@ -6,7 +6,9 @@
     """,
     "depends": ["base"],
     "author": "Khun LY",
-    "data": [],
+    "data": [
+        './views/menus.xml'
+    ],
     "category": "administration",
     "application": True,
     "installable": True

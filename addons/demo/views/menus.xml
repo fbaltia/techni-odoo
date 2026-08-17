@@ -1,0 +1,29 @@
+<odoo>
+    <record id="action_dev" model="ir.actions.act_window">
+        <field name="name">Devs</field>
+        <field name="res_model">demo.developers</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_game" model="ir.actions.act_window">
+        <field name="name">Games</field>
+        <field name="res_model">demo.games</field>
+        <field name="view_mode">list,form,kanban,graph</field>
+    </record>
+
+    <menuitem id="menu_demo_root" name="Demo" />
+
+    <menuitem 
+        id="menu_action_dev" 
+        name="Dev" 
+        parent="menu_demo_root"
+        action="action_dev"
+    />
+
+    <menuitem 
+        id="menu_action_game" 
+        name="Games" 
+        parent="menu_demo_root"
+        action="action_game"
+    />
+</odoo>
