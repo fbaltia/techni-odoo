@@ -19,7 +19,7 @@
         parent="menu_demo_root"
         action="action_dev"
     />
-
+ 
     <menuitem 
         id="menu_action_game" 
         name="Games" 

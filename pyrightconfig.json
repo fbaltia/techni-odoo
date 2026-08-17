@@ -1,0 +1,8 @@
+{
+  "include": ["addons"],
+  "exclude": [],
+  "typeCheckingMode": "basic",
+  "reportMissingImports": false,
+  "reportUntypedBaseClass": false,
+  "pythonVersion": "3.14"
+}

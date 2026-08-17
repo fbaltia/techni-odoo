@@ -35,5 +35,5 @@ secrets:
   pass: { file: pass.txt }
 
 volumes:
- web_data:
- db_data:
+  web_data:
+  db_data:
