@@ -1,0 +1,30 @@
+services:
+  web:
+    image: odoo:19
+    depends_on: [db]
+    networks: [odoo-network]
+    ports: [8069:8069]
+    environment:
+      - PASSWORD_FILE=/run/secrets/pass
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - ./config:/etc/odoo
+    secrets:
+      - pass
+    command: -- --dev=reload,xml,web
+  db:
+    image: postgres:18
+    networks: [odoo-network]
+    hostname: db
+    ports: [5433:5432]
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD_FILE=/run/secrets/pass 
+    secrets: [pass]
+
+networks:
+  odoo-network:
+
+secrets:
+  pass: { file: pass.txt }
