@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_demo_developers_user,demo.developers user,model_demo_developers,base.group_user,1,1,1,1
+access_demo_games_user,demo.games user,model_demo_games,base.group_user,1,1,1,1
+access_demo_tags_user,demo.tags user,model_demo_tags,base.group_user,1,1,1,1

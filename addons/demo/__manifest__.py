@@ -7,6 +7,7 @@
     "depends": ["base"],
     "author": "Khun LY",
     "data": [
+        'security/ir.model.access.csv',
         './views/menus.xml'
     ],
     "category": "administration",

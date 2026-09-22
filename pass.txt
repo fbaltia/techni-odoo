@@ -1,1 +1,7 @@
 odoo123
+
+Database Name: demo_odoo
+Email: fbaltia@gmail.com
+Password: odoo123
+
+Master password: nyse-as8z-53nd
